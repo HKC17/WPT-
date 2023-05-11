@@ -4,6 +4,6 @@ function sum(){
 
     let result = parseInt(input1) + parseInt(input2);
 
-    alert("Input 1 = " + input1 +" Input 2 =" + input2 + " Result =" + result);
+    alert("Input 1 = " + input1 +" Input 2 = " + input2 + " Result = " + result);
 
 }

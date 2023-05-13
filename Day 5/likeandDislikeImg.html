@@ -1,0 +1,47 @@
+<!-- 4 (i) write a JS Program to select an image – and also create different buttons like Front View
+back View, Side view ,top view etc.... Click on that button it will show the corresponding
+views
+(ii) Add a like or Dislike Button on the above Program, click on that button it will increase
+the count. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="likeandDislikeImg.js"></script>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        background-color: aqua;
+        height: 200px;
+      "
+    >
+      <img
+        id="id1"
+        src="1.webp"
+        alt=""
+        style="object-fit: cover; height: 200px"
+      />
+    </div>
+
+    <input type="button" value="Front View" onclick="changeImage(1)" />
+    <input type="button" value="Right side View" onclick="changeImage(2)" />
+    <input type="button" value="Left side View" onclick="changeImage(3)" />
+    <input type="button" value="camera View" onclick="changeImage(4)" />
+
+    <h1>
+      <span style="cursor: pointer" onclick="like()">&#128077;</span>
+      <span id="like">58</span>
+    </h1>
+    <h1>
+      <span style="cursor: pointer" onclick="dislike()">&#128078;</span>
+      <span id="dislike">8</span>
+    </h1>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" type="text/css" />
+    <script src="calculator.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <h1 style="color: white">calculate</h1>
+      <input type="text" id="result" class="input" placeholder="0" />
+      <br />
+      <div>
+        <div>
+          <input
+            type="button"
+            value="AC"
+            onclick="clearScreen()"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="+/-"
+            onclick="modulus()"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="%"
+            onclick="percentage()"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="/"
+            onclick="display('X')"
+            class="symbol"
+          />
+        </div>
+
+        <div>
+          <input
+            type="button"
+            value="7"
+            onclick="display('7')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="8"
+            onclick="display('8')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="9"
+            onclick="display('9')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="X"
+            onclick="display('X')"
+            class="symbol"
+          />
+        </div>
+
+        <div>
+          <input
+            type="button"
+            value="4"
+            onclick="display('4')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="5"
+            onclick="display('5')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="6"
+            onclick="display('6')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="-"
+            onclick="display('-')"
+            class="symbol"
+          />
+        </div>
+        <div>
+          <input
+            type="button"
+            value="1"
+            onclick="display('1')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="2"
+            onclick="display('2')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="3"
+            onclick="display('3')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="+"
+            onclick="display('+')"
+            class="symbol"
+          />
+        </div>
+        <div class="row">
+          <input type="button" value="0" onclick="display('0')" class="zero" />
+          <input
+            type="button"
+            value="."
+            onclick="display('.')"
+            class="buttonstyle"
+          />
+          <input
+            type="button"
+            value="="
+            onclick="result('=')"
+            class="symbol"
+            style="margin-left: 20px"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

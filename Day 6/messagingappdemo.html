@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="messsagingappdemo.css" />
+    <script src="messagingappdemo.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div id="divId"></div>
+      <hr />
+      <div class="input-container">
+        <input
+          id="msgId"
+          type="text"
+          placeholder="write message here"
+          class="inputmsg"
+        />
+
+        <br />
+        <br />
+
+        <input
+          id="btnId"
+          type="button"
+          value="Send message"
+          onclick="addnewmsg(false)"
+        />
+        <input
+          id="btnId"
+          type="button"
+          value="Reply message"
+          onclick="addnewmsg(true)"
+        />
+      </div>
+    </div>
+  </body>
+</html>
